@@ -1,0 +1,6 @@
+FROM gcr.io/distroless/static-debian12
+
+ADD ngram_langdetect_run_static .
+ADD all_lang_data_model.bin .
+
+ENTRYPOINT ["./ngram_langdetect_run_static", "all_lang_data_model.bin"]
