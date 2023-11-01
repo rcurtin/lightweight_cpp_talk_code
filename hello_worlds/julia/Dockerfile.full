@@ -1,0 +1,5 @@
+FROM julia:1
+
+ADD hello_world.jl .
+
+ENTRYPOINT julia hello_world.jl
